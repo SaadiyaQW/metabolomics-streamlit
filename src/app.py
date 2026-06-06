@@ -29,8 +29,8 @@ elif token == LIMITED_TOKEN:
     mode = "limited"
     st.info("🔒 限制模式（只能上传2次）")
 else:
-    mode = "limited"
-    st.warning("⚠️ 默认限制模式")
+    mode = "unlimited"
+    st.warning("🔓 无限制模式")
 
 # 初始化上传计数器
 if 'upload_count' not in st.session_state:
