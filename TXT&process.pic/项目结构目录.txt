@@ -1,0 +1,21 @@
+项目结构目录
+：
+metabolomics_project/
+│
+├── environment.yml          # conda环境配置
+├── requirements.txt         # pip包列表
+│
+├── data/                    # 数据文件
+│   └── metabolomics_data.csv
+│
+├── src/                     # 源代码
+│   ├── app.py              # Streamlit主程序
+│   ├── analyze.py          # 分析函数（PCA/OPLS-DA/差异筛选）
+│   ├── visualize.py        # 可视化函数
+│   └── utils.py            # 工具函数
+│
+├── output/                  # 输出结果
+│   ├── figures/            # 图表
+│   └── reports/            # 报告
+│
+└── README.md               # 项目说明

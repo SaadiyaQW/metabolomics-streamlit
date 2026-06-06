@@ -1,0 +1,30 @@
+项目一：代谢组学全流程分析平台
+把你手上HR-MS数据的标准分析流程，封装成一个可交互的Web应用。用户上传数据 → 自动跑完分析 → 输出图表+报告。
+本质：把"你会做代谢组分析"这件事，变成一个别人能直接用的工具。
+
+数据上传 (CSV/excel)
+    ↓
+预处理（缺失值填充、标准化、内标校正）
+    ↓
+统计分析（PCA、OPLS-DA、热图、火山图）
+    ↓
+差异筛选（VIP>1, p<0.05, FC>1.5）
+    ↓
+通路富集分析（KEGG、HMDB）
+    ↓
+AI预测（基于代谢谱预测苦味值）
+    ↓
+报告生成（PDF/HTML）
+
+技术栈
+组件	                                选型	                                     理由
+前端/框架	Streamlit	纯Python，             几天出demo，部署简单
+数据处理	         pandas, numpy	                           你已熟练
+统计分析	       scikit-learn, ropls (Python版)	PCA、OPLS-DA
+可视化	           plotly, matplotlib                       交互式图表
+机器学习   	xgboost, random forest	          苦味预测
+通路分析   	调用KEGG API 或 本地数据库	         自动化富集
+部署         	Hugging Face Spaces / 阿里云    	免费或低成本
+
+
+

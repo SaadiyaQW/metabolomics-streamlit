@@ -1,0 +1,76 @@
+虚拟环境搭建：
+# 创建名为 metabolomics 的环境，指定 Python 3.10
+conda create -n metabolomics python=3.10 -y
+
+# 激活环境
+conda activate metabolomics
+
+conda install pandas numpy scipy -y
+
+conda install scikit-learn statsmodels -y
+
+conda install matplotlib seaborn plotly -y
+
+pip install streamlit
+
+pip install ropls          
+pip install pyteomics      
+pip install bioservices    
+pip install peakutils     
+
+conda install openpyxl xlrd -y        
+pip install python-pptx              
+
+pip install gseapy        
+pip install mygene        
+
+pip install shap         
+pip install lime          
+pip install umap-learn    
+pip install hdbscan       
+
+
+pip install ropls          # OPLS-DA分析
+pip install pyteomics      # 质谱数据处理
+pip install bioservices    # 调用KEGG等数据库
+pip install peakutils      # 峰处理
+
+conda install openpyxl xlrd -y        # Excel文件
+pip install python-pptx               # PowerPoint（如需生成报告）
+
+pip install gseapy        # GSEA富集分析
+pip install mygene        # 基因ID转换
+
+pip install shap          # 模型可解释性
+pip install lime          # 局部解释模型
+pip install umap-learn    # UMAP降维（替代t-SNE）
+pip install hdbscan       # 聚类分析
+
+
+
+验证安装：
+# 在终端输入 python 进入交互环境
+python
+
+# 逐条输入以下命令
+import pandas as pd
+import numpy as np
+import scipy
+import sklearn
+import statsmodels
+import matplotlib
+import seaborn
+import plotly
+import streamlit as st
+import ropls
+import pyteomics
+import gseapy
+
+print("所有库导入成功！")
+
+导出环境：
+# 导出 conda 环境
+conda env export > environment.yml
+
+# 导出 pip 包列表
+pip freeze > requirements.txt

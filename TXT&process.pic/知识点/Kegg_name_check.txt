@@ -1,0 +1,25 @@
+kegg_name_check
+(base) PS D:\Desktop\exploration\AI\Bioinformatics & AI\Project_1> & D:/conda_envs/metabolomics/python.exe "d:/Desktop/exploration/AI/Bioinformatics & AI/Project_1/src/check_kegg_name.py"
+可用代谢物数量: 48
+
+前20个可用的代谢物:
+  M505: CHEBI:57589 -> acetyl-L-carnitine
+  M529: CHEBI:15347 -> acetone
+  M504: unknown -> unidentified
+  M142: unknown -> unidentified
+  M646: CHEBI:48669 -> tranexamic acid
+  M143: unknown -> unidentified
+  M440: unknown -> unidentified
+  M647: CHEBI:48669 -> tranexamic acid
+  M649: CHEBI:48669 -> tranexamic acid
+  M588: CHEBI:48669 -> tranexamic acid
+  M614: CHEBI:48669 -> tranexamic acid
+  M613: CHEBI:48669 -> tranexamic acid
+  M587: CHEBI:48669 -> tranexamic acid
+  M208: CHEBI:8087 -> phenylacetylglutamine
+  M188: unknown|CHEBI:18089 -> unidentified|hippuric acid
+  M178: unknown -> Overlap of several compounds
+  M147: unknown -> Overlap of several compounds
+  M569: CHEBI:48669 -> tranexamic acid
+  M491: CHEBI:57589 -> acetyl-L-carnitine
+  M132: CHEBI:17368 -> hypoxanthine
